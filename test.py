@@ -6,7 +6,7 @@ from model import PointNet
 
 SEED = 13
 gpus = [0]
-batch_size = 1
+batch_size = 32
 ckp_path = './output/latest.pth'
 
 
