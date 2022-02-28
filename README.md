@@ -33,7 +33,7 @@ tensorboard -logdir tensorboard/
 
 ### Result
 
-After 54 epochs training: 
+After 100 epochs training (reaches 78.8% acc on test set): 
 
 ![](acc.png) ![](loss.png)
 
