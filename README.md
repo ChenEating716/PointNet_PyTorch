@@ -3,6 +3,8 @@ simple and clean implementation of "PointNet: Deep Learning on Point Sets for 3D
 
 
 
+**This repo is only for classification.**
+
 TNet Structure has been removed since it is not that necessary.
 
 ### Modelnet40 
@@ -33,7 +35,14 @@ tensorboard -logdir tensorboard/
 
 After 54 epochs training: 
 
-![](/home/yitingchen/Documents/PointNet_PyTorch/acc.png) ![](/home/yitingchen/Documents/PointNet_PyTorch/loss.png)
+![](acc.png) ![](loss.png)
 
 
 
+### Reference
+
+Qi C R, Su H, Mo K, et al. Pointnet: Deep learning on point sets for 3d classification and segmentation[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2017: 652-660.
+
+https://github.com/charlesq34/pointnet.git
+
+https://github.com/fxia22/pointnet.pytorch.git
