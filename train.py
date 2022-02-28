@@ -64,7 +64,6 @@ def get_eval_acc_results(model, data_loader, device):
             pred_y = np.argmax(out.cpu().numpy(), axis=1)
             gt = np.argmax(y.cpu().numpy(), axis=1)
 
-            # TODO: calculate acc from pred_y and gt
             acc = np.sum(pred_y == gt)/ gt.size
             gt_ys = np.append(gt_ys, gt)
             pred_ys = np.append(pred_ys, pred_y)
@@ -141,6 +140,3 @@ if __name__ == "__main__":
                 best_acc = acc
                 save_checkpoint(save_dir, model, optimizer, epoch, best_acc, date)
 
-                # example = torch.randn(1, 3, 10000).to(device)
-                # traced_script_module = torch.jit.trace(model, example)
-                # traced_script_module.save("./output/traced_model.pt")
