@@ -25,7 +25,7 @@ python train.py
 python test.py
 
 # tensorboard
-# cd outputs/runs
+# cd output/runs
 tensorboard -logdir tensorboard/
 ```
 
